@@ -8,49 +8,57 @@ namespace TI46ProjetosConsole
 {
     internal class Program
     {
-        private static object exercicios1;
 
         static void Main(string[] args)
         {
-            Exercicios0();
+            // Criando um menu com switch case
+
+            Console.WriteLine("Escolha uma operação:");
+            Console.WriteLine("1 - Exercício 1: Declaração de Variáveis");
+            Console.WriteLine("2 - Exercício 2: Constantes e Operações");
+            Console.WriteLine("3 - Exercício 3: Operações Aritméticas");
+            Console.WriteLine("4 - Exercício 4: Prioridade dos Operadores");
+            Console.WriteLine("5 - Exercício 5: Cálculo de Desconto");
+            Console.WriteLine("6 - Exercício 6: Conversão de Temperaturas");
+
+            int escolha = Convert.ToInt32(Console.ReadLine());
+
+            switch (escolha)
+            {
+                case 1:
+                    Exercicio1();
+                    break;
+
+                case 2:
+                    Exercicio2();
+                    break;
+
+                case 3:
+                    Exercicio3();
+                    break;
+
+                case 4:
+                    Exercicio4();
+                    break;
+
+                case 5:
+                    Exercicio5();
+                    break;
+
+                case 6:
+                    Exercicio6();
+                    break;
+
+                default:
+                    Console.WriteLine("Operação inválida.");
+                    break;
+            }
+
+            Console.ReadKey(); // Aguarda o usuário pressionar uma tecla para encerrar
         }
 
-        private static void Exercicios0()
-        {
-            string nome;
-            int nota1, nota2, nota3, nota4; 
-            double Resultado;
-            Console.WriteLine("Digite seu nome: ");
-            nome = (Console.ReadLine());
-            Console.WriteLine("Seja Bem-vindo, ", nome);
-
-            //Entre com as Notas
-            Console.WriteLine("Digite a 1° nota do aluno: ", nome);
-            nota1 = int.Parse(Console.ReadLine());
-
-            Console.WriteLine("Digite a 2° nota do aluno: ", nome);
-            nota2 = int.Parse(Console.ReadLine());
-
-            Console.WriteLine("Digite a 3° nota do aluno: ", nome);
-            nota3 = int.Parse(Console.ReadLine());
-
-            Console.WriteLine("Digite a 4° nota do aluno: ", nome);
-            nota4 = int.Parse(Console.ReadLine());
-
-            //processamento
-            Resultado = (nota1 + nota2 + nota3 + nota4) / 4.0;
-
-            //saída
-            Console.WriteLine("O aluno " + nome + " teve média final: ", +Resultado);
-
-            Console.WriteLine("Pressione qualquer tecla para sair...");
-            Console.ReadKey();
-
-            Exercicios1();
-
-        }
-
-        private static void Exercicios1()
+        // Exercício 1: Declaração de variáveis
+        private static void Exercicio1()
         {
             // Declaração de variáveis
             int inteiro = 10;
@@ -61,13 +69,10 @@ namespace TI46ProjetosConsole
             Console.WriteLine("Valor inteiro: " + inteiro);
             Console.WriteLine("Valor real: " + real);
             Console.WriteLine("Valor caractere: " + caractere);
-            Console.ReadKey();
-
-
-            exercicios2();
         }
 
-        private static void exercicios2()
+        // Exercício 2: Constantes e Operações
+        private static void Exercicio2()
         {
             const double Pi = 3.14159;
             double raio, area;
@@ -78,13 +83,10 @@ namespace TI46ProjetosConsole
             area = Pi * Math.Pow(raio, 2);
 
             Console.WriteLine("A área do círculo é: " + area);
-            Console.ReadKey();
-
-
-            exercicio3();
         }
 
-        private static void exercicio3()
+        // Exercício 3: Operações Aritméticas
+        private static void Exercicio3()
         {
             int num1, num2, num3;
             double media;
@@ -101,22 +103,18 @@ namespace TI46ProjetosConsole
             media = (num1 + num2 + num3) / 3.0;
 
             Console.WriteLine("A média aritmética é: " + media);
-            Console.ReadKey();
-
-            exercicio4();
         }
 
-        private static void exercicio4()
+        // Exercício 4: Prioridade dos Operadores
+        private static void Exercicio4()
         {
             double resultado = (2 + 3 * Math.Pow(4, 2)) / Math.Pow((1 - 5), 2);
 
             Console.WriteLine("O resultado da expressão é: " + resultado);
-            Console.ReadKey();
-
-            exercicio5();
         }
 
-        private static void exercicio5()
+        // Exercício 5: Cálculo de Desconto
+        private static void Exercicio5()
         {
             double preco, precoFinal;
             const double desconto = 0.10;
@@ -127,12 +125,10 @@ namespace TI46ProjetosConsole
             precoFinal = preco - (preco * desconto);
 
             Console.WriteLine("O preço final com 10% de desconto é: " + precoFinal);
-            Console.ReadKey();
-
-            exercicio6();
         }
 
-        private static void exercicio6()
+        // Exercício 6: Conversão de Temperaturas
+        private static void Exercicio6()
         {
             double celsius, fahrenheit;
 
@@ -142,7 +138,5 @@ namespace TI46ProjetosConsole
             fahrenheit = (celsius * 9.0 / 5.0) + 32;
 
             Console.WriteLine("A temperatura em Fahrenheit é: " + fahrenheit);
-            Console.ReadKey();
         }
     }
-}
