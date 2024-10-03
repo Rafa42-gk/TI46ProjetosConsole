@@ -49,6 +49,14 @@ namespace TI46ProjetosConsole
                     Exercicio6();
                     break;
 
+                case 7:
+                    Lista01();
+                    break;
+
+                case 8:
+                    Lista02();
+                    break;
+
                 default:
                     Console.WriteLine("Operação inválida.");
                     break;
@@ -140,3 +148,4 @@ namespace TI46ProjetosConsole
             Console.WriteLine("A temperatura em Fahrenheit é: " + fahrenheit);
         }
     }
+}
