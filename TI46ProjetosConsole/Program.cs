@@ -14,47 +14,29 @@ namespace TI46ProjetosConsole
             // Criando um menu com switch case
 
             Console.WriteLine("Escolha uma operação:");
-            Console.WriteLine("1 - Exercício 1: Declaração de Variáveis");
-            Console.WriteLine("2 - Exercício 2: Constantes e Operações");
-            Console.WriteLine("3 - Exercício 3: Operações Aritméticas");
-            Console.WriteLine("4 - Exercício 4: Prioridade dos Operadores");
-            Console.WriteLine("5 - Exercício 5: Cálculo de Desconto");
-            Console.WriteLine("6 - Exercício 6: Conversão de Temperaturas");
+            Console.WriteLine("1 - Lista01 - ");
+            Console.WriteLine("2 - Lista02 - ");
+            Console.WriteLine("3 - Lista03 - ");
+            Console.WriteLine("4 - Lista04 - ");
 
             int escolha = Convert.ToInt32(Console.ReadLine());
 
             switch (escolha)
             {
                 case 1:
-                    Exercicio1();
-                    break;
-
-                case 2:
-                    Exercicio2();
-                    break;
-
-                case 3:
-                    Exercicio3();
-                    break;
-
-                case 4:
-                    Exercicio4();
-                    break;
-
-                case 5:
-                    Exercicio5();
-                    break;
-
-                case 6:
-                    Exercicio6();
-                    break;
-
-                case 7:
                     Lista01();
                     break;
 
-                case 8:
+                case 2:
                     Lista02();
+                    break;
+
+                case 3:
+                    Lista03();
+                    break;
+
+                case 4:
+                    Lista04();
                     break;
 
                 default:
@@ -66,7 +48,7 @@ namespace TI46ProjetosConsole
         }
 
         // Exercício 1: Declaração de variáveis
-        private static void Exercicio1()
+        private static void Lista01()
         {
             // Declaração de variáveis
             int inteiro = 10;
@@ -80,7 +62,7 @@ namespace TI46ProjetosConsole
         }
 
         // Exercício 2: Constantes e Operações
-        private static void Exercicio2()
+        private static void Lista02()
         {
             const double Pi = 3.14159;
             double raio, area;
@@ -94,7 +76,7 @@ namespace TI46ProjetosConsole
         }
 
         // Exercício 3: Operações Aritméticas
-        private static void Exercicio3()
+        private static void Lista03()
         {
             int num1, num2, num3;
             double media;
@@ -114,7 +96,7 @@ namespace TI46ProjetosConsole
         }
 
         // Exercício 4: Prioridade dos Operadores
-        private static void Exercicio4()
+        private static void Lista04()
         {
             double resultado = (2 + 3 * Math.Pow(4, 2)) / Math.Pow((1 - 5), 2);
 
