@@ -8,5 +8,79 @@ namespace TI46ProjetosConsole
 {
     internal class Lista03
     {
+        public void escolherexercicio()
+        {
+            Console.WriteLine("Escolha uma operação:");
+            Console.WriteLine("1 - Exercicio1 - ");
+            Console.WriteLine("2 - Exercicio2 - ");
+            Console.WriteLine("3 - Exercicio3 - ");
+            Console.WriteLine("4 - Exercicio4 - ");
+            Console.WriteLine("5 - Exercicio5 - ");
+            Console.WriteLine("6 - Exercicio6 - ");
+
+            int escolha = Convert.ToInt32(Console.ReadLine());
+
+            switch (escolha)
+            {
+                case 1:
+                    Exercicio1();
+                    break;
+
+                case 2:
+                    Exercicio2();
+                    break;
+
+                case 3:
+                    Exercicio3();
+                    break;
+
+                case 4:
+                    Exercicio4();
+                    break;
+
+                case 5:
+                    Exercicio5();
+                    break;
+
+                case 6:
+                    Exercicio6();
+                    break;
+
+                default:
+                    Console.WriteLine("Operação inválida.");
+                    break;
+            }
+            Console.ReadKey(); // Aguarda o usuário pressionar uma tecla para encerrar
+        }
+
+        private void Exercicio1()
+        {
+            throw new NotImplementedException();
+        }
+
+        private void Exercicio2()
+        {
+            throw new NotImplementedException();
+        }
+
+        private void Exercicio3()
+        {
+            throw new NotImplementedException();
+        }
+
+        private void Exercicio4()
+        {
+            throw new NotImplementedException();
+        }
+
+        private void Exercicio5()
+        {
+            throw new NotImplementedException();
+        }
+
+        private void Exercicio6()
+        {
+            throw new NotImplementedException();
+        }
     }
 }

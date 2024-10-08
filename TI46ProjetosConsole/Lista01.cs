@@ -1,14 +1,16 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Security.AccessControl;
 using System.Text;
 using System.Threading.Tasks;
+using System.Xml;
 
 namespace TI46ProjetosConsole
 {
     internal class Lista01
     {
-        public void TesteMetodo()
+        public void escolherexercicio()
         {
             Console.WriteLine("Escolha uma operação:");
             Console.WriteLine("1 - Exercicio1 - ");
@@ -31,7 +33,7 @@ namespace TI46ProjetosConsole
                      break;
 
                  case 2:
-                     Exrecicio2();
+                     Exercicio2();
                      break;
 
                  case 3:
@@ -80,9 +82,12 @@ namespace TI46ProjetosConsole
             Console.ReadKey();
         }
 
-        private void Exrecicio2()
+        private void Exercicio2()
         {
-            throw new NotImplementedException();
+
+            Console.WriteLine("Qual é o seu nome? \n");
+            Console.ReadLine();
+            Console.WriteLine("Muito Prazer");
         }
 
         private void Exercicio3()
