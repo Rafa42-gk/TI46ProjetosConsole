@@ -60,12 +60,40 @@ namespace TI46ProjetosConsole
 
         private void Exercicio2()
         {
-            throw new NotImplementedException();
+            int num1, num2, num3;
+            double media;
+
+            Console.WriteLine("Digite o primeiro número: ");
+            num1 = int.Parse(Console.ReadLine());
+
+            Console.WriteLine("Digite o segundo número: ");
+            num2 = int.Parse(Console.ReadLine());
+
+            Console.WriteLine("Digite o terceiro número: ");
+            num3 = int.Parse(Console.ReadLine());
+
+            media = (num1 + num2 + num3) / 3.0;
+
+
+
+            Console.WriteLine("A média aritmética é: " + media);
         }
 
         private void Exercicio3()
         {
-            throw new NotImplementedException();
+            string nome;
+
+            Console.WriteLine("Digite seu Nome: ");
+            nome = Console.ReadLine();
+
+            do
+            {
+                Console.WriteLine("Digite um nome: ", "Ou rafael para encerrar o programa \n");
+                nome = Console.ReadLine();
+            } while (nome != "Rafael");
+
+            Console.WriteLine("Você digito Rafael! o programa será encerrado" );
+            Console.ReadKey();
         }
 
         private void Exercicio4()
