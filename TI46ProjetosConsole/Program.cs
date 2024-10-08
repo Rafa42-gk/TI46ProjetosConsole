@@ -24,19 +24,19 @@ namespace TI46ProjetosConsole
             switch (escolha)
             {
                 case 1:
-                    Lista01();
+                    Lista01.Executar();
                     break;
 
                 case 2:
-                    Lista02();
+                    Lista02.Executar();
                     break;
 
                 case 3:
-                    Lista03();
+                    Lista03.Executar();
                     break;
 
                 case 4:
-                    Lista04();
+                    Lista04.Executar();
                     break;
 
                 default:
