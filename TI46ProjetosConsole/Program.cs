@@ -22,19 +22,19 @@ namespace TI46ProjetosConsole
             switch (escolha)
             {
                 case 1:
-                    Lista01.escolherexercicio();
+                    Lista01();
                     break;
 
                 case 2:
-                    Lista02.escolherexercicio();
+                    Lista02();
                     break;
 
                 case 3:
-                    Lista03.escolherexercicio();
+                    Lista03();
                     break;
 
                 case 4:
-                    Lista04.escolherexercicio();
+                    Lista04();
                     break;
 
                 default:
@@ -42,9 +42,9 @@ namespace TI46ProjetosConsole
                     break;
             }
 
-            Console.ReadKey(); // Aguarda o usuário pressionar uma tecla para encerrar
-        }
+            Console.ReadKey();
 
-        
-     }
+
+        }
+    }
 }
