@@ -71,7 +71,7 @@ namespace TI46ProjetosConsole
                      Console.WriteLine("Operação inválida.");
                      break;
              }
-            Console.ReadKey(); // Aguarda o usuário pressionar uma tecla para encerrar
+            Console.ReadKey();
         }
 
         private static void Exercicio1()
@@ -85,9 +85,9 @@ namespace TI46ProjetosConsole
         {
             string nome;
 
-            Console.WriteLine("Qual é o seu nome? \n");
+            Console.WriteLine("Qual é o seu nome? ");
             nome = Console.ReadLine();
-            Console.WriteLine($"Olá {nome} é um prazer te conhecer!");
+            Console.WriteLine($"Olá {nome}, é um prazer te conhecer!");
 
             Console.ReadKey();
         }
@@ -110,12 +110,42 @@ namespace TI46ProjetosConsole
 
         private static void Exercicio4()
         {
-            throw new NotImplementedException();
+            int valor1;
+            int valor2;
+            int soma;
+
+
+            Console.WriteLine("Digite um valor: ");
+            valor1 = Convert.ToInt32(Console.ReadLine());
+
+            Console.WriteLine("Digite outro valor: ");
+            valor2 = Convert.ToInt32(Console.ReadLine());
+
+            soma = valor1 + valor2;
+
+            Console.WriteLine($"A soma entre {valor1} e {valor2} é igual a {soma}.");
+
+            Console.ReadKey();
         }
 
         private static void Exercicio5()
         {
-            throw new NotImplementedException();
+            double nota1;
+            double nota2;
+            double media;
+
+
+            Console.WriteLine("Digite um valor: ");
+            nota1 = Convert.ToInt32(Console.ReadLine());
+
+            Console.WriteLine("Digite outro valor: ");
+            nota2 = Convert.ToInt32(Console.ReadLine());
+
+            media = (nota1 + nota2) / 2;
+
+            Console.WriteLine($"A média de {nota1} mais {nota2} é igual a {media}.");
+
+            Console.ReadKey();
         }
 
         private static void Exrecicio6()

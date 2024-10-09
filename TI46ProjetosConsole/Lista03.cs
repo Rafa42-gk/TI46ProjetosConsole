@@ -50,7 +50,7 @@ namespace TI46ProjetosConsole
                     Console.WriteLine("Operação inválida.");
                     break;
             }
-            Console.ReadKey(); // Aguarda o usuário pressionar uma tecla para encerrar
+            Console.ReadKey(); 
         }
 
         private static void Exercicio1()
