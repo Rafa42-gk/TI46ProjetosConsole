@@ -74,7 +74,7 @@ namespace TI46ProjetosConsole
             Console.ReadKey(); // Aguarda o usuário pressionar uma tecla para encerrar
         }
 
-        private void Exercicio1()
+        private static void Exercicio1()
         {
             Console.WriteLine("Hello World!!!");
             Console.ReadLine();
@@ -82,7 +82,7 @@ namespace TI46ProjetosConsole
             Console.ReadKey();
         }
 
-        private void Exercicio2()
+        private static void Exercicio2()
         {
             string nome;
 
@@ -93,42 +93,42 @@ namespace TI46ProjetosConsole
             Console.ReadKey();
         }
 
-        private void Exercicio3()
+        private static void Exercicio3()
         {
             throw new NotImplementedException();
         }
 
-        private void Exercicio4()
+        private static void Exercicio4()
         {
             throw new NotImplementedException();
         }
 
-        private void Exercicio5()
+        private static void Exercicio5()
         {
             throw new NotImplementedException();
         }
 
-        private void Exrecicio6()
+        private static void Exrecicio6()
         {
             throw new NotImplementedException();
         }
 
-        private void Exercicio7()
+        private static void Exercicio7()
         {
             throw new NotImplementedException();
         }
 
-        private void Exercicio8()
+        private static void Exercicio8()
         {
             throw new NotImplementedException();
         }
 
-        private void Exercicio9()
+        private static void Exercicio9()
         {
             throw new NotImplementedException();
         }
 
-        private void Exercicio10()
+        private static void Exercicio10()
         {
             throw new NotImplementedException();
         }

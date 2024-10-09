@@ -53,12 +53,12 @@ namespace TI46ProjetosConsole
             Console.ReadKey(); // Aguarda o usuário pressionar uma tecla para encerrar
         }
 
-        private void Exercicio1()
+        private static void Exercicio1()
         {
             throw new NotImplementedException();
         }
 
-        private void Exercicio2()
+        private static void Exercicio2()
         {
             int num1, num2, num3;
             double media;
@@ -79,7 +79,7 @@ namespace TI46ProjetosConsole
             Console.WriteLine("A média aritmética é: " + media);
         }
 
-        private void Exercicio3()
+        private static void Exercicio3()
         {
             string nome;
 
@@ -96,7 +96,7 @@ namespace TI46ProjetosConsole
             Console.ReadKey();
         }
 
-        private void Exercicio4()
+        private static void Exercicio4()
         {
             int inicio = 35;
             int fim = 98111;
@@ -113,7 +113,7 @@ namespace TI46ProjetosConsole
             }
         }
 
-        private void Exercicio5()
+        private static void Exercicio5()
         {
             int soma = 0;
 
@@ -126,7 +126,7 @@ namespace TI46ProjetosConsole
             Console.ReadKey();
         }
 
-        private void Exercicio6()
+        private static void Exercicio6()
         {
             int nm;
             int i;
