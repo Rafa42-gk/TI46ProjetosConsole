@@ -150,12 +150,37 @@ namespace TI46ProjetosConsole
 
         private static void Exrecicio6()
         {
-            throw new NotImplementedException();
+            double n;
+            double antecessor;
+            double sucessor;
+
+
+            Console.WriteLine("Digite um valor: ");
+            n = Convert.ToInt32(Console.ReadLine());
+
+            antecessor = n - 1;
+            sucessor = n + 1;
+
+            Console.WriteLine($"o antecessor de {n} é {antecessor} e o sucessor é {sucessor}.");
+
+            Console.ReadKey();
         }
 
         private static void Exercicio7()
         {
-            throw new NotImplementedException();
+            double n;
+            double dobro;
+            double terço;
+
+            Console.WriteLine("Digite um valor: ");
+            n = Convert.ToDouble(Console.ReadLine());
+
+            dobro = n * 2;
+            terço = n / 3;
+
+            Console.WriteLine($"o dobro de {n} é {dobro} e o teerço é {terço}.");
+
+            Console.ReadKey();
         }
 
         private static void Exercicio8()
