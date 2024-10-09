@@ -78,7 +78,6 @@ namespace TI46ProjetosConsole
         {
             Console.WriteLine("Hello World!!!");
             Console.ReadLine();
-
             Console.ReadKey();
         }
 
@@ -88,14 +87,25 @@ namespace TI46ProjetosConsole
 
             Console.WriteLine("Qual é o seu nome? \n");
             nome = Console.ReadLine();
-            Console.WriteLine("Olá ", nome, "é um prazer te conhecer!");
+            Console.WriteLine($"Olá {nome} é um prazer te conhecer!");
 
             Console.ReadKey();
         }
 
         private static void Exercicio3()
         {
-            throw new NotImplementedException();
+            string nome;
+            double salario;
+
+            Console.WriteLine("Nome do funcionário: ");
+            nome = Console.ReadLine();
+
+            Console.WriteLine("Salario: ");
+            salario = Convert.ToDouble(Console.ReadLine());
+
+            Console.WriteLine($"O funcionario {nome} tem o salario de {salario}R$");
+
+            Console.ReadKey();
         }
 
         private static void Exercicio4()
