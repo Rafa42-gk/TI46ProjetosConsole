@@ -22,19 +22,19 @@ namespace TI46ProjetosConsole
             switch (escolha)
             {
                 case 1:
-                    Lista01();
+                    Lista01.menu1();
                     break;
 
                 case 2:
-                    Lista02();
+                    Lista02.menu2();
                     break;
 
                 case 3:
-                    Lista03();
+                    Lista03.menu3();
                     break;
 
                 case 4:
-                    Lista04();
+                    Lista04.menu4();
                     break;
 
                 default:
@@ -43,6 +43,8 @@ namespace TI46ProjetosConsole
             }
 
             Console.ReadKey();
+
+
 
 
         }

@@ -8,7 +8,7 @@ namespace TI46ProjetosConsole
 {
     internal class Lista03
     {
-        public void escolherexercicio()
+        public static void menu3()
         {
             Console.WriteLine("Escolha uma operação:");
             Console.WriteLine("1 - Exercicio1 - ");
@@ -98,17 +98,46 @@ namespace TI46ProjetosConsole
 
         private void Exercicio4()
         {
-            throw new NotImplementedException();
+            int inicio = 35;
+            int fim = 98111;
+            int n = 0;
+
+            for (int i = inicio; i < fim; i++)
+            {
+                if (i%2== inicio)
+            {
+                    n++;
+            }
+                Console.WriteLine($"A quantidade de números pares entre {inicio} e {fim} é: {n}");
+                Console.ReadKey();
+            }
         }
 
         private void Exercicio5()
         {
-            throw new NotImplementedException();
+            int soma = 0;
+
+            for (int i = 1; i <= 5000; i += 2) 
+            {
+                soma += i;
+            }
+
+            Console.WriteLine("A soma de todos os números ímpares de 1 até 5000 é: " + soma);
+            Console.ReadKey();
         }
 
         private void Exercicio6()
         {
-            throw new NotImplementedException();
+            int nm;
+            int i;
+
+            Console.WriteLine("Digite um numero para a tabuada: ");
+            nm = int.Parse(Console.ReadLine());
+
+            for (i = 1; i <10; i++) ;
+            Console.WriteLine($"{nm} x {i} = {nm * i}");
+
+            Console.ReadKey();
         }
     }
 }

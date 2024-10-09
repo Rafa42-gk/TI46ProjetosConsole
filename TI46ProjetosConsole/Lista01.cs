@@ -10,7 +10,7 @@ namespace TI46ProjetosConsole
 {
     internal class Lista01
     {
-        public void escolherexercicio()
+        public static void menu1()
         {
             Console.WriteLine("Escolha uma operação:");
             Console.WriteLine("1 - Exercicio1 - ");
@@ -84,10 +84,13 @@ namespace TI46ProjetosConsole
 
         private void Exercicio2()
         {
+            string nome;
 
             Console.WriteLine("Qual é o seu nome? \n");
-            Console.ReadLine();
-            Console.WriteLine("Muito Prazer");
+            nome = Console.ReadLine();
+            Console.WriteLine("Olá ", nome, "é um prazer te conhecer!");
+
+            Console.ReadKey();
         }
 
         private void Exercicio3()

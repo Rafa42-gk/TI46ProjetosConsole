@@ -8,7 +8,7 @@ namespace TI46ProjetosConsole
 {
     internal class Lista02
     {
-        public void escolherexercicio()
+        public static void menu2()
         {
             Console.WriteLine("Escolha uma operação:");
             Console.WriteLine("1 - Exercicio1 - ");
