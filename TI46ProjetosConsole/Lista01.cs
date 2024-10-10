@@ -185,17 +185,63 @@ namespace TI46ProjetosConsole
 
         private static void Exercicio8()
         {
-            throw new NotImplementedException();
+            Console.WriteLine("Digite uma distância em metros: ");
+            double metros = Convert.ToDouble(Console.ReadLine());
+
+            double km = metros / 1000;   
+            double hm = metros / 100;    
+            double dam = metros / 10;    
+            double dm = metros * 10;     
+            double cm = metros * 100;    
+            double mm = metros * 1000;   
+
+            Console.WriteLine($"\nA distância de {metros}m corresponde a:");
+            Console.WriteLine($"{km} Km");
+            Console.WriteLine($"{hm} Hm");
+            Console.WriteLine($"{dam} Dam");
+            Console.WriteLine($"{dm} dm");
+            Console.WriteLine($"{cm} cm");
+            Console.WriteLine($"{mm} mm");
+
+            Console.ReadKey();
         }
 
         private static void Exercicio9()
         {
-            throw new NotImplementedException();
+            double reais;
+            double dolar;
+            double valor;
+
+            Console.WriteLine("Digite um valor em R$: ");
+            reais = Convert.ToDouble(Console.ReadLine());
+
+            dolar = 3.45;
+
+            valor = reais * dolar;
+
+            Console.WriteLine($"O valor de R${reais} em Dolares é: {valor}");
+            Console.ReadKey();
         }
 
         private static void Exercicio10()
         {
-            throw new NotImplementedException();
+            double altura;
+            double largura;
+            double area;
+            double tinta;
+
+            Console.WriteLine("Digite o valor da altura: ");
+            altura = Convert.ToDouble(Console.ReadLine());
+
+            Console.WriteLine("Digite o valor de largura: ");
+            largura = Convert.ToDouble(Console.ReadLine());
+
+            area = altura * largura;
+
+            tinta = area / 2;
+
+            Console.WriteLine($"A area total a ser pintada é de {area}m quadrados, e to total de tinta necessaria pra pinta-la é de {tinta}L.");
+            Console.ReadKey();
         }
     }
 }
