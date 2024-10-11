@@ -207,7 +207,29 @@ namespace TI46ProjetosConsole
 
         private static void Exercicio7()
         {
-            throw new NotImplementedException();
+            int A;
+            int B;
+            int C;
+
+            Console.WriteLine("Digite o valor de A: ");
+            A = Convert.ToInt32(Console.ReadLine());
+
+            Console.WriteLine("Digite o valor de B: ");
+            B = Convert.ToInt32(Console.ReadLine());
+
+
+            if (A == B)
+            {
+                C = A + B;
+                Console.WriteLine($"Os valores são iguais. A soma de A + B é: {C}");
+            }
+            else
+            {
+                C = A * B;
+                Console.WriteLine($"Os valores são diferentes. A multiplicação de A * B é: {C}");
+            }
+
+            Console.ReadKey();
         }
 
         private static void Exercicio8()
@@ -236,17 +258,98 @@ namespace TI46ProjetosConsole
 
         private static void Exercicio9()
         {
-            throw new NotImplementedException();
+            Console.WriteLine("Digite o primeiro valor: ");
+            int valor1 = Convert.ToInt32(Console.ReadLine());
+
+            Console.WriteLine("Digite o segundo valor: ");
+            int valor2 = Convert.ToInt32(Console.ReadLine());
+
+            Console.WriteLine("Digite o terceiro valor: ");
+            int valor3 = Convert.ToInt32(Console.ReadLine());
+
+            int[] valores = { valor1, valor2, valor3 };
+
+            Array.Sort(valores);
+            Array.Reverse(valores);
+
+            Console.WriteLine("Valores do maior para o menor: ");
+            foreach (int valor in valores)
+            {
+                Console.WriteLine(valor);
+            }
+
+            Console.ReadKey();
         }
 
         private static void Exercicio10()
         {
-            throw new NotImplementedException();
+            Console.WriteLine("Digite o primeiro valor: ");
+            int valor1 = Convert.ToInt32(Console.ReadLine());
+
+            Console.WriteLine("Digite o segundo valor: ");
+            int valor2 = Convert.ToInt32(Console.ReadLine());
+
+            Console.WriteLine("Digite o terceiro valor: ");
+            int valor3 = Convert.ToInt32(Console.ReadLine());
+
+            int[] valores = { valor1, valor2, valor3 };
+
+            Array.Sort(valores);
+
+            Console.WriteLine("Valores do menor para o maior: ");
+            foreach (int valor in valores)
+            {
+                Console.WriteLine(valor);
+            }
+
+            Console.ReadKey();
         }
 
         private static void Exercicio11()
         {
-            throw new NotImplementedException();
+            int inicio;
+            int fim;
+            int duração;
+            int tempoR;
+            int tempoE;
+
+            Console.WriteLine("Digite a hora de inico da partida: ");
+            inicio = Convert.ToInt32(Console.ReadLine());
+
+            Console.WriteLine("Digite a hora de fim da partida: ");
+            fim = Convert.ToInt32(Console.ReadLine());
+
+            if (inicio >= fim) 
+            {
+                duração = inicio - fim;
+            }
+            else
+            {
+                duração = (24 - inicio ) + fim;
+            }
+
+            Console.WriteLine($"A duação da partida foi de {duração} horas.");
+           
+
+            if (duração < 24)
+            {
+                tempoR = duração - 24;
+                Console.WriteLine($"Faltam {tempoR} horas até o fim do tempo limite.");
+            }
+
+            else if (duração == 24)
+            {
+                Console.WriteLine("A partida dorou extamente 24 horas");
+            }
+
+            else
+            {
+                tempoE = duração - 24;
+                Console.WriteLine($"A partida durou {tempoE} horas além do tempo limite permitido.");
+            
+            }
+            Console.ReadKey();
+
         }
     }
 }
