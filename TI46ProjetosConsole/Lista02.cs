@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Diagnostics.Eventing.Reader;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -79,32 +80,129 @@ namespace TI46ProjetosConsole
 
         private static void Exercicio1()
         {
-            throw new NotImplementedException();
+            int numero;
+
+            Console.WriteLine("Digite um número: ");
+            numero = Convert.ToInt32(Console.ReadLine());
+
+            if (numero > 20)
+            {
+                Console.WriteLine($"O número {numero} é maior que 20.");
+            }
+            else
+            {
+                Console.WriteLine($"O numero {numero} é menor que 20.");
+            }
+
+            Console.ReadKey();
         }
 
         private static void Exercicio2()
         {
-            throw new NotImplementedException();
+            int n;
+
+            Console.WriteLine("Digite um numero: ");
+            n = Convert.ToInt32(Console.ReadLine());
+
+            {
+                if (n > 10)
+                {
+                    Console.WriteLine("O numero é maior que 10"); ;
+
+                }
+                else
+                {
+                    Console.WriteLine("O numero não é maior que 10");
+                }
+                Console.ReadKey();
+            }
         }
 
         private static void Exercicio3()
         {
-            throw new NotImplementedException();
+            int A, B, C;
+            
+            Console.WriteLine("Digite o valor de A: ");
+            A = Convert.ToInt32(Console.ReadLine());
+
+            Console.WriteLine("Digite o valor de B: ");
+            B = Convert.ToInt32(Console.ReadLine());
+
+            Console.WriteLine("Digite o valor de C: ");
+            C = Convert.ToInt32(Console.ReadLine());
+
+            if (A + B < C)
+            {
+                Console.WriteLine("A soma de A + B não é menor que C");
+            }
+            else
+            {
+                Console.WriteLine("A soma de A + B é menor que C");
+            }
+            Console.ReadKey();
         }
 
         private static void Exercicio4()
         {
-            throw new NotImplementedException();
+            int A, B;
+
+            Console.WriteLine("Digite o valor de A: ");
+            A = Convert.ToInt32(Console.ReadLine());
+
+            Console.WriteLine("Digite o valor de B: ");
+            B = Convert.ToInt32(Console.ReadLine());
+
+            if (A + B > 10)
+            {
+                Console.WriteLine("A soma de A + B é maior que 10");
+            }
+            else
+            {
+                Console.WriteLine("A soma de A + B é menor que 10");
+            }
+            Console.ReadKey();
         }
 
         private static void Exercicio5()
         {
-            throw new NotImplementedException();
+            Console.WriteLine("Digite o nome:");
+            string nome = Console.ReadLine();
+
+            Console.WriteLine("Digite o sexo (M/F):");
+            string sexo = Console.ReadLine().ToUpper();
+
+            Console.WriteLine("Digite o estado civil (solteiro(a), casado(a), divorciado(a), viuvo(a):");
+            string estadoCivil = Console.ReadLine().ToUpper(); 
+
+            if (sexo == "F" && estadoCivil == "casada")
+            {
+                Console.WriteLine("Digite o tempo de casada (em anos):");
+                int tempo = Convert.ToInt32(Console.ReadLine());
+                Console.WriteLine($"Nome: {nome}, Sexo: {sexo}, Estado Civil: {estadoCivil}, Tempo de Casada: {tempo} anos.");
+            }
+            else
+            {
+                Console.WriteLine($"Nome: {nome}, Sexo: {sexo}, Estado Civil: {estadoCivil}.");
+            }
+
+            Console.ReadKey();
         }
 
         private static void Exrecicio6()
         {
-            throw new NotImplementedException();
+            int n;
+
+            Console.WriteLine("Digite um numero: ");
+            n = Convert.ToInt32(Console.ReadLine());
+
+            if (n%2 == 0)
+            {
+                Console.WriteLine("O numero é par");
+            }
+            else
+            {
+                Console.WriteLine("O numero é ímpar");
+            }
         }
 
         private static void Exercicio7()
@@ -114,7 +212,26 @@ namespace TI46ProjetosConsole
 
         private static void Exercicio8()
         {
-            throw new NotImplementedException();
+            int n;
+            int dobro;
+            int triplo;
+
+            Console.WriteLine("Digite um numero: ");
+            n = Convert.ToInt32(Console.ReadLine());
+
+            if (n > 0)
+            {
+                dobro = n * 2;
+                Console.WriteLine($"O numero é positivo, resultando em seu dobro: {dobro}");
+
+            }
+            else 
+            {
+                triplo = n * 3;
+                Console.WriteLine($"O numero é negativo, resultando em seu triplo: {triplo}");
+
+            }
+            Console.ReadKey();
         }
 
         private static void Exercicio9()
