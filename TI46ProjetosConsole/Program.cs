@@ -16,6 +16,7 @@ namespace TI46ProjetosConsole
             Console.WriteLine(" 2 - Lista02 - ");
             Console.WriteLine(" 3 - Lista03 - ");
             Console.WriteLine(" 4 - Lista04 - ");
+            Console.WriteLine(" 5 - Lista05 - ");
 
             int escolha = Convert.ToInt32(Console.ReadLine());
 
@@ -35,6 +36,10 @@ namespace TI46ProjetosConsole
 
                 case 4:
                     Lista04.menu4();
+                    break;
+
+                case 5:
+                    Lista05.menu5();
                     break;
 
                 default:

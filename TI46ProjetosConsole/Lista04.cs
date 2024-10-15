@@ -48,7 +48,7 @@ namespace TI46ProjetosConsole
                     break;
 
                 case 6:
-                    Exrecicio6();
+                    Exercicio6();
                     break;
 
                 case 7:
@@ -214,7 +214,7 @@ namespace TI46ProjetosConsole
             Console.ReadKey();
         }
 
-        private static void Exrecicio6()
+        private static void Exercicio6()
         {
             Console.WriteLine("Por favor, insira a sua idade:");
             double idade = double.Parse(Console.ReadLine());
