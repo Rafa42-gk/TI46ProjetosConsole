@@ -77,7 +77,6 @@ namespace TI46ProjetosConsole
         private static void Exercicio1()
         {
             Console.WriteLine("Hello World!!!");
-            Console.ReadLine();
             Console.ReadKey();
         }
 
@@ -103,7 +102,7 @@ namespace TI46ProjetosConsole
             Console.WriteLine("Salario: ");
             salario = Convert.ToDouble(Console.ReadLine());
 
-            Console.WriteLine($"O funcionario {nome} tem o salario de {salario}R$");
+            Console.WriteLine($"O funcionario {nome} tem o salario de {salario:F2}R$");
 
             Console.ReadKey();
         }

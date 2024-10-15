@@ -50,12 +50,28 @@ namespace TI46ProjetosConsole
                     Console.WriteLine("Operação inválida.");
                     break;
             }
-            Console.ReadKey(); 
+            Console.ReadKey();
         }
 
         private static void Exercicio1()
         {
-            throw new NotImplementedException();
+            int n1;
+            int n2;
+            int n3;
+            int soma;
+
+            Console.WriteLine("Digite 3 numeros para a soma: ");
+            Console.WriteLine("Primeiro numero: ");
+            n1 = Convert.ToInt32(Console.ReadLine());
+            Console.WriteLine("Segundo numero: ");
+            n2 = Convert.ToInt32(Console.ReadLine());
+            Console.WriteLine("Terceiro numero: ");
+            n3 = Convert.ToInt32(Console.ReadLine());
+
+            soma = n1 + n2 + n3;
+
+            Console.WriteLine($"A soma resultou em {soma}");
+            Console.ReadKey();
         }
 
         private static void Exercicio2()
@@ -83,16 +99,13 @@ namespace TI46ProjetosConsole
         {
             string nome;
 
-            Console.WriteLine("Digite seu Nome: ");
-            nome = Console.ReadLine();
-
             do
             {
                 Console.WriteLine("Digite um nome: ", "Ou rafael para encerrar o programa \n");
                 nome = Console.ReadLine();
             } while (nome != "Rafael");
 
-            Console.WriteLine("Você digito Rafael! o programa será encerrado" );
+            Console.WriteLine("Você digito Rafael! o programa será encerrado");
             Console.ReadKey();
         }
 
@@ -102,22 +115,23 @@ namespace TI46ProjetosConsole
             int fim = 98111;
             int n = 0;
 
-            for (int i = inicio; i < fim; i++)
+            for (int i = inicio; i <= fim; i++)
             {
-                if (i%2== inicio)
-            {
+                if (i % 2 == 0)
+                {
                     n++;
+                }
             }
-                Console.WriteLine($"A quantidade de números pares entre {inicio} e {fim} é: {n}");
-                Console.ReadKey();
-            }
+
+            Console.WriteLine($"A quantidade de números pares entre {inicio} e {fim} é: {n}");
+            Console.ReadKey();
         }
 
         private static void Exercicio5()
         {
             int soma = 0;
 
-            for (int i = 1; i <= 5000; i += 2) 
+            for (int i = 1; i <= 5000; i += 2)
             {
                 soma += i;
             }
@@ -128,16 +142,19 @@ namespace TI46ProjetosConsole
 
         private static void Exercicio6()
         {
-            int nm;
-            int i;
+            {
+                int nm;
 
-            Console.WriteLine("Digite um numero para a tabuada: ");
-            nm = int.Parse(Console.ReadLine());
+                Console.WriteLine("Digite um número para a tabuada: ");
+                nm = int.Parse(Console.ReadLine());
 
-            for (i = 1; i <10; i++) ;
-            Console.WriteLine($"{nm} x {i} = {nm * i}");
+                for (int i = 1; i <= 10; i++)
+                {
+                    Console.WriteLine($"{nm} x {i} = {nm * i}");
+                }
 
-            Console.ReadKey();
+                Console.ReadKey();
+            }
         }
     }
 }

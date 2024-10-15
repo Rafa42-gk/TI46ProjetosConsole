@@ -131,7 +131,7 @@ namespace TI46ProjetosConsole
             Console.WriteLine("Digite o valor de C: ");
             C = Convert.ToInt32(Console.ReadLine());
 
-            if (A + B < C)
+            if (A + B >= C)
             {
                 Console.WriteLine("A soma de A + B não é menor que C");
             }
@@ -172,17 +172,17 @@ namespace TI46ProjetosConsole
             string sexo = Console.ReadLine().ToUpper();
 
             Console.WriteLine("Digite o estado civil (solteiro(a), casado(a), divorciado(a), viuvo(a):");
-            string estadoCivil = Console.ReadLine().ToUpper(); 
+            string estadocivil = Console.ReadLine().ToUpper(); 
 
-            if (sexo == "F" && estadoCivil == "casada")
+            if (sexo == "F" && estadocivil == "casada")
             {
                 Console.WriteLine("Digite o tempo de casada (em anos):");
                 int tempo = Convert.ToInt32(Console.ReadLine());
-                Console.WriteLine($"Nome: {nome}, Sexo: {sexo}, Estado Civil: {estadoCivil}, Tempo de Casada: {tempo} anos.");
+                Console.WriteLine($"Nome: {nome}, Sexo: {sexo}, Estado Civil: {estadocivil}, Tempo de Casada: {tempo} anos.");
             }
             else
             {
-                Console.WriteLine($"Nome: {nome}, Sexo: {sexo}, Estado Civil: {estadoCivil}.");
+                Console.WriteLine($"Nome: {nome}, Sexo: {sexo}, Estado Civil: {estadocivil}.");
             }
 
             Console.ReadKey();
@@ -203,6 +203,7 @@ namespace TI46ProjetosConsole
             {
                 Console.WriteLine("O numero é ímpar");
             }
+            Console.ReadKey();
         }
 
         private static void Exercicio7()
@@ -319,35 +320,32 @@ namespace TI46ProjetosConsole
             Console.WriteLine("Digite a hora de fim da partida: ");
             fim = Convert.ToInt32(Console.ReadLine());
 
-            if (inicio >= fim) 
+            if (inicio <= fim)
             {
-                duração = inicio - fim;
+                duração = fim - inicio;
             }
             else
             {
-                duração = (24 - inicio ) + fim;
+                duração = (24 - inicio) + fim;
             }
 
-            Console.WriteLine($"A duação da partida foi de {duração} horas.");
-           
+            Console.WriteLine($"A duração da partida foi de {duração} horas.");
 
             if (duração < 24)
             {
-                tempoR = duração - 24;
+                tempoR = 24 - duração;
                 Console.WriteLine($"Faltam {tempoR} horas até o fim do tempo limite.");
             }
-
             else if (duração == 24)
             {
-                Console.WriteLine("A partida dorou extamente 24 horas");
+                Console.WriteLine("A partida durou exatamente 24 horas.");
             }
-
             else
             {
                 tempoE = duração - 24;
                 Console.WriteLine($"A partida durou {tempoE} horas além do tempo limite permitido.");
-            
             }
+
             Console.ReadKey();
 
         }
