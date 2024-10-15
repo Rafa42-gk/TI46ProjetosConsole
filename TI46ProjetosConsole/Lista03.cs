@@ -10,13 +10,13 @@ namespace TI46ProjetosConsole
     {
         public static void menu3()
         {
-            Console.WriteLine("Escolha uma operação:");
-            Console.WriteLine("1 - Exercicio1 - ");
-            Console.WriteLine("2 - Exercicio2 - ");
-            Console.WriteLine("3 - Exercicio3 - ");
-            Console.WriteLine("4 - Exercicio4 - ");
-            Console.WriteLine("5 - Exercicio5 - ");
-            Console.WriteLine("6 - Exercicio6 - ");
+            Console.WriteLine(" Escolha uma operação:");
+            Console.WriteLine(" 1 - Exercicio1 - ");
+            Console.WriteLine(" 2 - Exercicio2 - ");
+            Console.WriteLine(" 3 - Exercicio3 - ");
+            Console.WriteLine(" 4 - Exercicio4 - ");
+            Console.WriteLine(" 5 - Exercicio5 - ");
+            Console.WriteLine(" 6 - Exercicio6 - ");
 
             int escolha = Convert.ToInt32(Console.ReadLine());
 

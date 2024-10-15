@@ -11,11 +11,11 @@ namespace TI46ProjetosConsole
 
         static void Main(string[] args)
         {
-            Console.WriteLine("Escolha uma Lista:");
-            Console.WriteLine("1 - Lista01 - ");
-            Console.WriteLine("2 - Lista02 - ");
-            Console.WriteLine("3 - Lista03 - ");
-            Console.WriteLine("4 - Lista04 - ");
+            Console.WriteLine(" === Menu de Atividades ===");
+            Console.WriteLine(" 1 - Lista01 - ");
+            Console.WriteLine(" 2 - Lista02 - ");
+            Console.WriteLine(" 3 - Lista03 - ");
+            Console.WriteLine(" 4 - Lista04 - ");
 
             int escolha = Convert.ToInt32(Console.ReadLine());
 
