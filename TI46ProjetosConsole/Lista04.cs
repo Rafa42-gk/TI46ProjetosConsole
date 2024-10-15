@@ -254,7 +254,7 @@ namespace TI46ProjetosConsole
             }
             else 
             {
-                Console.WriteLine($"O valor total ficou em : {n}");
+                Console.WriteLine($"O valor total ficou em : {n:F2}");
             }
             Console.ReadKey();
 

@@ -135,10 +135,10 @@ namespace TI46ProjetosConsole
 
 
             Console.WriteLine("Digite um valor: ");
-            nota1 = Convert.ToInt32(Console.ReadLine());
+            nota1 = Convert.ToDouble(Console.ReadLine());
 
             Console.WriteLine("Digite outro valor: ");
-            nota2 = Convert.ToInt32(Console.ReadLine());
+            nota2 = Convert.ToDouble(Console.ReadLine());
 
             media = (nota1 + nota2) / 2;
 
@@ -155,7 +155,7 @@ namespace TI46ProjetosConsole
 
 
             Console.WriteLine("Digite um valor: ");
-            n = Convert.ToInt32(Console.ReadLine());
+            n = Convert.ToDouble(Console.ReadLine());
 
             antecessor = n - 1;
             sucessor = n + 1;
@@ -177,7 +177,7 @@ namespace TI46ProjetosConsole
             dobro = n * 2;
             terço = n / 3;
 
-            Console.WriteLine($"o dobro de {n} é {dobro} e o teerço é {terço}.");
+            Console.WriteLine($"o dobro de {n} é {dobro} e o terço é {terço}.");
 
             Console.ReadKey();
         }
@@ -216,7 +216,7 @@ namespace TI46ProjetosConsole
 
             dolar = 3.45;
 
-            valor = reais * dolar;
+            valor = reais / dolar;
 
             Console.WriteLine($"O valor de R${reais} em Dolares é: {valor}");
             Console.ReadKey();
@@ -239,7 +239,7 @@ namespace TI46ProjetosConsole
 
             tinta = area / 2;
 
-            Console.WriteLine($"A area total a ser pintada é de {area}m quadrados, e to total de tinta necessaria pra pinta-la é de {tinta}L.");
+            Console.WriteLine($"A área total a ser pintada é de {area} m², e o total de tinta necessária para pintá-la é de {tinta} L.");
             Console.ReadKey();
         }
     }
