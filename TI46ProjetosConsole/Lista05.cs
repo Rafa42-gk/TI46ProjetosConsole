@@ -88,12 +88,27 @@ namespace TI46ProjetosConsole
 
             media = soma / 10;
             Console.WriteLine($"A média aritmética é: {media}");
-
+            Console.ReadKey();
         }
 
         private static void Exercicio2()
         {
-            throw new NotImplementedException();
+            string[] nomes = new string[5];
+
+            Console.WriteLine("Digite 5 nomes:");
+            for (int i = 0; i < 5; i++)
+            {
+                nomes[i] = Console.ReadLine();
+            }
+
+            Array.Sort(nomes);
+
+            Console.WriteLine("Nomes em ordem alfabética:");
+            foreach (string nome in nomes)
+            {
+                Console.WriteLine(nome);
+            }
+            Console.ReadKey();
         }
 
         private static void Exercicio3()
