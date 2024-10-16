@@ -74,7 +74,21 @@ namespace TI46ProjetosConsole
 
         private static void Exercicio1()
         {
-            throw new NotImplementedException();
+            double[] numeros = new double[10];
+            double soma = 0;
+            double media;
+            int i;
+
+            Console.WriteLine("Digite 10 números reais:");
+            for ( i = 0; i < 10; i++)
+            {
+                numeros[i] = double.Parse(Console.ReadLine());
+                soma += numeros[i];
+            }
+
+            media = soma / 10;
+            Console.WriteLine($"A média aritmética é: {media}");
+
         }
 
         private static void Exercicio2()
