@@ -113,22 +113,80 @@ namespace TI46ProjetosConsole
 
         private static void Exercicio3()
         {
-            throw new NotImplementedException();
+            int[] num = new int[10];
+            int i;
+
+            Console.WriteLine("Digite 10 numeros inteiros:");
+            for ( i = 0; i < 10; i++)
+            {
+                num[i] = int.Parse(Console.ReadLine());
+            }
+
+            var repetidos = num.GroupBy(x => x).Where(g => g.Count() > 1).Select(g => g.Key);
+
+            if (repetidos.Any())
+            {
+                Console.WriteLine("Números repetidos:");
+                foreach (int numero in repetidos)
+                {
+                    Console.WriteLine(numero);
+                }
+            }
+            else
+            {
+                Console.WriteLine("Não há números repetidos.");
+            }
+            Console.ReadKey();
         }
 
         private static void Exercicio4()
         {
-            throw new NotImplementedException();
+
         }
 
         private static void Exercicio5()
         {
-            throw new NotImplementedException();
+            int[] num = new int[10];
+            int i;
+            Console.WriteLine("Digite 10 numeros inteiros:");
+
+            for (i = 0; i < 10; i++)
+            {
+                num[i] = int.Parse(Console.ReadLine());
+            }
+
+            Array.Reverse(num);
+
+            Console.WriteLine("Números na ordem inversa:");
+            foreach (int numero in num)
+            {
+                Console.WriteLine(numero);
+            }
+            Console.ReadKey();
         }
 
         private static void Exercicio6()
         {
-            throw new NotImplementedException();
+            int[] numeros = new int[5];
+            int i;
+            List<int> pares = new List<int>();
+
+            Console.WriteLine("Digite 5 números inteiros:");
+            for (i = 0; i < 5; i++)
+            {
+                numeros[i] = int.Parse(Console.ReadLine());
+                if (numeros[i] % 2 == 0)
+                {
+                    pares.Add(numeros[i]);
+                }
+            }
+
+            Console.WriteLine("Números pares:");
+            foreach (int numero in pares)
+            {
+                Console.WriteLine(numero);
+            }
+            Console.ReadKey();
         }
 
         private static void Exercicio7()
@@ -148,7 +206,39 @@ namespace TI46ProjetosConsole
 
         private static void Exercicio10()
         {
-            throw new NotImplementedException();
+            int[] numeros = new int[10];
+            int[] pares = new int[5];
+            int[] impares = new int[5];
+            int indicePar = 0;
+            int indiceImpar = 0;
+            int i;
+
+            Console.WriteLine("Digite 10 números inteiros:");
+            for (i = 0; i < 10; i++)
+            {
+                numeros[i] = int.Parse(Console.ReadLine());
+                if (i % 2 == 0)
+                {
+                    pares[indicePar++] = numeros[i];
+                }
+                else
+                {
+                    impares[indiceImpar++] = numeros[i];
+                }
+            }
+
+            Console.WriteLine("Números pares:");
+            foreach (int numero in pares)
+            {
+                Console.WriteLine(numero);
+            }
+
+            Console.WriteLine("Números ímpares:");
+            foreach (int numero in impares)
+            {
+                Console.WriteLine(numero);
+            }
+            Console.ReadKey();
         }
 
     }
