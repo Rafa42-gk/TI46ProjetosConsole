@@ -141,7 +141,35 @@ namespace TI46ProjetosConsole
 
         private static void Exercicio4()
         {
+            char[] palavra1 = new char[5];
+            char[] palavra2 = new char[5];
 
+            Console.WriteLine("Digite a primeira palavra de 5 caracteres:");
+            for (int i = 0; i < 5; i++)
+            {
+                palavra1[i] = Console.ReadLine()[0];
+            }
+
+            Console.WriteLine("Digite a segunda palavra de 5 caracteres:");
+            for (int i = 0; i < 5; i++)
+            {
+                palavra2[i] = Console.ReadLine()[0];
+            }
+
+            Array.Sort(palavra1);
+            Array.Sort(palavra2);
+
+            bool saoAnagramas = new string(palavra1) == new string(palavra2);
+
+            if (saoAnagramas)
+            {
+                Console.WriteLine("As palavras são anagramas.");
+            }
+            else
+            {
+                Console.WriteLine("As palavras não são anagramas.");
+            }
+            Console.ReadKey();
         }
 
         private static void Exercicio5()
@@ -182,26 +210,100 @@ namespace TI46ProjetosConsole
             }
 
             Console.WriteLine("Números pares:");
-            foreach (int numero in pares)
+            foreach (int num in pares)
             {
-                Console.WriteLine(numero);
+                Console.WriteLine(num);
             }
             Console.ReadKey();
         }
 
         private static void Exercicio7()
         {
-            throw new NotImplementedException();
+            int[] numeros = new int[10];
+            int negativo = 0;
+            int positivo = 0;
+            int zero = 0;
+            int i;
+
+            Console.WriteLine("Digite 10 números inteiros:");
+            for (i = 0; i < 10; i++)
+            {
+                numeros[i] = int.Parse(Console.ReadLine());
+                if (numeros[i] < 0)
+                {
+                    negativo++;
+                }
+                else if (numeros[i] > 0)
+                {
+                    positivo++;
+                }
+                else
+                {
+                    zero++;
+                }
+            }
+
+            Console.WriteLine($"Numeros Positivos: {positivo}, Numeros Negativos: {negativo} e Zeros: {zero}.");
+            Console.ReadKey();
         }
 
         private static void Exercicio8()
         {
-            throw new NotImplementedException();
+            int[] num = new int[10];
+
+            Console.WriteLine("Digite 10 números inteiros:");
+            for (int i = 0; i < 10; i++)
+            {
+                num[i] = int.Parse(Console.ReadLine());
+            }
+
+            int maior = num[0];
+            int menor = num[0];
+
+            foreach (int numero in num)
+            {
+                if (numero > maior)
+                {
+                    maior = numero;
+                }
+
+                if (numero < menor)
+                {
+                    menor = numero;
+                }
+            }
+
+            Console.WriteLine($"Maior valor: {maior}, Menor valor: {menor}");
         }
 
         private static void Exercicio9()
         {
-            throw new NotImplementedException();
+            char[] palavra = new char[5];
+
+            Console.WriteLine("Digite uma palavra de 5 caracteres:");
+            for (int i = 0; i < 5; i++)
+            {
+                palavra[i] = Console.ReadLine()[0];
+            }
+
+            bool ehPalindromo = true;
+            for (int i = 0; i < 5 / 2; i++)
+            {
+                if (palavra[i] != palavra[5 - 1 - i])
+                {
+                    ehPalindromo = false;
+                    break;
+                }
+            }
+
+            if (ehPalindromo)
+            {
+                Console.WriteLine("A palavra é um palíndromo.");
+            }
+            else
+            {
+                Console.WriteLine("A palavra não é um palíndromo.");
+            }
         }
 
         private static void Exercicio10()
