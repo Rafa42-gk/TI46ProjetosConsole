@@ -136,7 +136,17 @@ namespace TI46ProjetosConsole
             {
                 Console.WriteLine("Não há números repetidos.");
             }
-            Console.ReadKey();
+            /* Alternativa - int[] numeros = new int[10];
+
+            for (int i = 0; i < 10; i++)
+            {
+                Console.Write($"Digite o número {i + 1}: ");
+                numeros[i] = int.Parse(Console.ReadLine());
+            }
+
+            bool repetido = numeros.Distinct().Count() != numeros.Length;
+            Console.WriteLine(repetido ? "Existem números repetidos." : "Não existem números repetidos.");
+            Console.ReadKey();*/
         }
 
         private static void Exercicio4()
