@@ -141,35 +141,7 @@ namespace TI46ProjetosConsole
 
         private static void Exercicio4()
         {
-            char[] palavra1 = new char[5];
-            char[] palavra2 = new char[5];
-
-            Console.WriteLine("Digite a primeira palavra de 5 caracteres:");
-            for (int i = 0; i < 5; i++)
-            {
-                palavra1[i] = Console.ReadLine()[0];
-            }
-
-            Console.WriteLine("Digite a segunda palavra de 5 caracteres:");
-            for (int i = 0; i < 5; i++)
-            {
-                palavra2[i] = Console.ReadLine()[0];
-            }
-
-            Array.Sort(palavra1);
-            Array.Sort(palavra2);
-
-            bool saoAnagramas = new string(palavra1) == new string(palavra2);
-
-            if (saoAnagramas)
-            {
-                Console.WriteLine("As palavras são anagramas.");
-            }
-            else
-            {
-                Console.WriteLine("As palavras não são anagramas.");
-            }
-            Console.ReadKey();
+            
         }
 
         private static void Exercicio5()
@@ -278,32 +250,7 @@ namespace TI46ProjetosConsole
 
         private static void Exercicio9()
         {
-            char[] palavra = new char[5];
-
-            Console.WriteLine("Digite uma palavra de 5 caracteres:");
-            for (int i = 0; i < 5; i++)
-            {
-                palavra[i] = Console.ReadLine()[0];
-            }
-
-            bool ehPalindromo = true;
-            for (int i = 0; i < 5 / 2; i++)
-            {
-                if (palavra[i] != palavra[5 - 1 - i])
-                {
-                    ehPalindromo = false;
-                    break;
-                }
-            }
-
-            if (ehPalindromo)
-            {
-                Console.WriteLine("A palavra é um palíndromo.");
-            }
-            else
-            {
-                Console.WriteLine("A palavra não é um palíndromo.");
-            }
+            
         }
 
         private static void Exercicio10()
